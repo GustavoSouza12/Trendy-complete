@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trendy</title>
+        <link rel="shortcut icon" type="img/png" href="images/favicon.png">
+        <!--Css-->
+        <link rel="stylesheet" href="styles/main.css">
+        <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/blip-chat-widget" type="text/javascript"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="nav">
+                <img class= "nav--logo" src="images/trendy-logo-preto.png" alt="Trendy logo">
+                <div class="nav--search">
+                    <input class="input--search" type="text" id="txtBusca" placeholder="Buscar..."/>
+                    <img class="input--icon" src="images/icons/ic-actions-search.svg" id="btnBusca" alt="Buscar"/>
+                </div>
+                <div class="nav--login-container">
+                    <ul class="nav--login">
+                        <li class="login--link"><a href="#">Entre ou Cadastre-se</a></li>
+                        <li><input type="image" class="bag" src="images/icons/ic-shopping-bag.svg" onclick="abreModal()"></li>                            
+                        </div>
+                    </ul>
+                <div>    
+            </nav>
+        </header>
+        <main>
+            <div>
+                <ul class="main-nav">
+                    <li class="active"><a href="">NOVIDADES</a></li>
+                    <li><a href="">JEANS</a></li>
+                    <li><a href="">BLUSAS</a></li>
+                    <li><a href="">CALÇAS</a></li>
+                    <li><a href="">CASACOS</a></li>
+                    <li><a href="">VESTIDOS</a></li>
+                    <li><a href="">MACACÕES</a></li>
+                    <li><a href="">SAIAS</a></li>
+                    <li><a href="">OFERTAS</a></li>
+                </ul>
+            </div>    
+            <div class="img-container">
+                <img class="main-img" src="images/main-img.png" alt="">
+            </div>
+        </main>
+        <section class="news">
+            <div class="news--container">
+                <h1 class="news--title">Novidades</h1>
+                <div class="card-row">
+                    <div class="card">
+                        <img class="card--img" src="images/white-shirt.webp" alt="">
+                        <h3 class="card--title">BLUSA BÁSICA MANGA CURTA BRANCA</h3>
+                        <span class="card--price">R$ 49,90</span>
+                        <div class="card--stars_and_avaliations">
+                            <ul class="card--star-list">
+                                <li><img class="star" src="images/icons/ic-actions-star-1.svg" alt=""></li>
+                                <li><img class="star" src="images/icons/ic-actions-star-1.svg" alt=""></li>
+                                <li><img class="star" src="images/icons/ic-actions-star-1.svg" alt=""></li>
+                                <li><img class="star" src="images/icons/ic-actions-star-1.svg" alt=""></li>
+                                <li><img class="star" src="images/icons/ic-actions-star.svg" alt=""></li>
+                            </ul>
+                            <div>
+                                <span class="card--avaliation">173 Avaliações</span>
+                            </div>
+                        </div>    
+                        <div class="card--buttons">
+                            <a class="card--buy-button" href="#" onclick="addProduto()">Comprar</a>
+                            <img class="card--favorite-button" src="images/icons/heart-sharp.svg" >
+                        </div>
+                    </div>
+                </div>  
+                <div class="pagination">
+                    <div class="pagination--list">
+                        <span class="page">Página:</span>
+                        <ol>
+                            <li><a href="">1</a></li>
+                            <li><a class="page-active" href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">4</a></li>
+                            <li><a href="">5</a></li>
+                            <li><a href="">6</a></li>
+                            <li><a href="">7</a></li>
+                        </ol>
+                    </div>
+                    <span class="pagination--results">1 - 48 de 1.836 resultados</span>    
+                </div>  
+                <div class="discount">
+                    <p>20% DE DESCONTO NA SUA PRIMEIRA COMPRA<span> Fale com o nosso personal shopper para habilitar descontos e promoções</span></p>
+                    <a  id='blip' href="https://chat.blip.ai/?appKey=ZGkyOmUzOTlmNzQ5LWRjNGYtNDZjMi05MmY0LWYwNmJmMjRiNmQ5YQ==" src=''>Fale com o nosso Personal Shopper </a>
+                </div>         
+            </div> 
+        </section>    
+        <footer class="footer">
+            <div class="footer--column1">
+                <div>
+                    <img src="images/icons/ic-contact-chat.svg" alt="">
+                    <p>tire sua dúvida conosco</p>
+                </div>
+                <div>
+                    <img src="images/icons/ic-ecommerce-money.svg" alt="">
+                    <p>Formas de Pagamento</p>
+                </div>
+                <div>
+                    <img src="images/icons/ic-ecommerce-house.svg" alt="">
+                    <p>Retire na Loja</p>
+                </div>
+                <div>
+                    <img src="images/icons/ic-ecommerce-basket.svg" alt="">
+                    <p>Personal Shopper</p>
+                </div>
+            </div>
+            <div class="footer--column2">
+                <span>Sobre</span>
+                <ul>
+                    <li><a href="">Institucional</a></li>
+                    <li><a href="">Nossas Lojas</a></li>
+                    <li><a href="">Sustentabilidade</a></li>
+                    <li><a href="">Trabalhe Conosco</a></li>
+                </ul>
+            </div>
+            <div class="footer--column3">
+                <span>Perguntas frequentes</span>
+                <ul>
+                    <li><a href="">frete Grátis</a></li>
+                    <li><a href="">Parcelamento em 10x</a></li>
+                    <li><a href="">Cartão Trendy</a></li>
+                    <li><a href="">Acompanhe seu pedido</a></li>
+                </ul>
+            </div>
+            <div class="footer--column4">
+                <span>Segurança</span>
+                <ul>
+                    <li><a href="">Privacidade e Segurança</a></li>
+                    <li><a href="">Termos de Uso</a></li>
+                    <li><a href="">Trocas e Devoluções</a></li>
+                </ul>
+            </div>
+        </footer>
+        <div id="modal-car" class="modal-container">
+            <div class="modal">
+                <h3 class="carinho">Carrinho</h3>
+                <form>
+                    <div class="produto"></div>
+                    <div id="total" ></div>
+                    <input type="button" class="B_comprar" value="Comprar">
+                    <input type="button" class="fechar" id ='fechar' value="Continuar comprando">
+                </form>
+            </div>
+        </div>
+        <div class="compra" id="comp">
+            <img class="card-compra" src="images/white-shirt.webp" alt="">
+             <span>BLUSA BÁSICA MANGA CURTA BRANCA</span>
+             <span id='preco'>R$ 49,90</span>
+             <a onclick="removeProduto()">remover</a>   
+        </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://unpkg.com/blip-chat-widget" type="text/javascript">
+    </script>
+    <script>
+        (function () {
+            window.onload = function () {
+                new BlipChat()
+                .withAppKey('ZGkyOmUzOTlmNzQ5LWRjNGYtNDZjMi05MmY0LWYwNmJmMjRiNmQ5YQ==')
+                .withButton({"color":"#2CC3D5","icon":""})
+                .withCustomCommonUrl('https://chat.blip.ai/?appKey=ZGkyOmUzOTlmNzQ5LWRjNGYtNDZjMi05MmY0LWYwNmJmMjRiNmQ5YQ==')
+                .build();
+            }
+        })();
+    </script> 
+    </body>
+</html>
